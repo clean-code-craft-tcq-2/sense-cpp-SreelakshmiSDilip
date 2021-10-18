@@ -7,5 +7,5 @@ namespace Statistics {
         float minVal;
         float maxVal;
     };
-    Stats ComputeStatistics(const std::vector<___>& );
+    Stats ComputeStatistics(const std::vector<int>& );
 }
