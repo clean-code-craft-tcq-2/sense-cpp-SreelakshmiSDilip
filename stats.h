@@ -20,8 +20,8 @@ public:
 };
 struct IAlerter
 {
-	EmailAlert emailAlert;
-	 LEDAlert ledAlert;
+	EmailAlert *emailAlert;
+	 LEDAlert *ledAlert;
 };
 struct EmailAlert 
 {
