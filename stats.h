@@ -3,9 +3,9 @@
 namespace Statistics {
     struct Stats
     {
-        float avgVal;
-        float minVal;
-        float maxVal;
+        double average;
+        double min;
+        double max;
     };
     Stats ComputeStatistics(const std::vector<double>& );
 }
