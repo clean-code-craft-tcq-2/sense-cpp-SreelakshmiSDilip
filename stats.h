@@ -11,7 +11,7 @@ namespace Statistics {
 }
 class StatsAlerter
 {
-	using IAlerter = boost::variant<EmailAlert, LEDAlert>;
+	using IAlerter = std::variant<EmailAlert, LEDAlert>;
     std::vector<IAlerter*> alerters;
     float maxThreshold = 10.2;
 public:
