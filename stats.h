@@ -14,18 +14,22 @@ class StatsAlerter
 
    std::vector<IAlerter*> alerters;
    float maxThreshold = 10.2;
-
+public:
+  StatsAlerter statsAlerter(const float,  std::vector<IAlerter*> );
    void checkAndAlert( std::vector<IAlerter*>);
 };
-class IAlerter
+struct IAlerter
 {
+	EmailAlert emailAlert;
+	 LEDAlert ledAlert;
 };
-class EmailAlert : public IAlerter
+struct EmailAlert 
 {
 	bool emailSent;
 };
-class LEDAlert : public IAlerter
+struct LEDAlert 
 {
+
 	bool ledGlows;
 };
 
