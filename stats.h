@@ -10,26 +10,29 @@ namespace Statistics {
     Stats ComputeStatistics(const std::vector<double>& );
 	
 }
-class StatsAlerter
+namespace
 {
+	class StatsAlerter
+	{
 
-public:
-  StatsAlerter statsAlerter(const float,  std::vector<IAlerter>& );
-   void checkAndAlert( std::vector<IAlerter>&);
-};
-struct IAlerter
-{
-	EmailAlert emailAlert;
-	 LEDAlert ledAlert;
-};
-struct EmailAlert 
-{
-	bool emailSent;
-};
-struct LEDAlert 
-{
+	public:
+	  StatsAlerter StatsAlerter(const float,  std::vector<IAlerter>& );
+	   void checkAndAlert( std::vector<IAlerter>&);
+	};
+	struct IAlerter
+	{
+		EmailAlert emailAlert;
+		 LEDAlert ledAlert;
+	};
+	struct EmailAlert 
+	{
+		bool emailSent;
+	};
+	struct LEDAlert 
+	{
 
-	bool ledGlows;
-};
+		bool ledGlows;
+	};
+}
 
 
