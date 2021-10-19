@@ -12,13 +12,6 @@ namespace Statistics {
 }
 namespace
 {
-	class StatsAlerter
-	{
-
-	public:
-	   StatsAlerter(const float,  std::vector<IAlerter>& );
-	   void checkAndAlert( std::vector<IAlerter>&);
-	};
 	struct IAlerter
 	{
 		EmailAlert emailAlert;
@@ -33,6 +26,14 @@ namespace
 
 		bool ledGlows;
 	};
+	class StatsAlerter
+	{
+
+	public:
+	   StatsAlerter(const float,  std::vector<IAlerter>& );
+	   void checkAndAlert( std::vector<IAlerter>&);
+	};
+
 }
 
 
