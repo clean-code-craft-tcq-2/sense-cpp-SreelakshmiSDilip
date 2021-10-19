@@ -12,11 +12,6 @@ namespace Statistics {
 }
 namespace
 {
-	struct IAlerter
-	{
-		EmailAlert emailAlert;
-		 LEDAlert ledAlert;
-	};
 	struct EmailAlert 
 	{
 		bool emailSent;
@@ -26,6 +21,12 @@ namespace
 
 		bool ledGlows;
 	};
+	struct IAlerter
+	{
+		EmailAlert emailAlert;
+		 LEDAlert ledAlert;
+	};
+	
 	class StatsAlerter
 	{
 
