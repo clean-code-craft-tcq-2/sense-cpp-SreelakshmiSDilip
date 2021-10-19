@@ -31,7 +31,7 @@ namespace Statistics {
 
 	public:
 	   StatsAlerter(const float,  std::vector<IAlerter>& );
-	   void checkAndAlert( coonst std::vector<float>&);
+	   void checkAndAlert( const std::vector<float>&);
 	};
 
 //}
