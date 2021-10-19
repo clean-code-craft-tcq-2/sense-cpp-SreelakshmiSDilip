@@ -9,19 +9,18 @@ namespace Statistics {
     };
     Stats ComputeStatistics(const std::vector<double>& );
 	
-	class StatsAlerter
+}
+class StatsAlerter
 {
 
-   std::vector<IAlerter*> alerters;
-   float maxThreshold = 10.2;
 public:
-  StatsAlerter statsAlerter(const float,  std::vector<IAlerter*> );
-   void checkAndAlert( std::vector<IAlerter*>);
+  StatsAlerter statsAlerter(const float,  std::vector<IAlerter>& );
+   void checkAndAlert( std::vector<IAlerter>&);
 };
 struct IAlerter
 {
-	EmailAlert *emailAlert;
-	 LEDAlert *ledAlert;
+	EmailAlert emailAlert;
+	 LEDAlert ledAlert;
 };
 struct EmailAlert 
 {
@@ -33,5 +32,4 @@ struct LEDAlert
 	bool ledGlows;
 };
 
-}
 
