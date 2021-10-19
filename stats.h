@@ -10,8 +10,8 @@ namespace Statistics {
     Stats ComputeStatistics(const std::vector<double>& );
 	
 }
-namespace
-{
+//namespace
+//{
 	struct EmailAlert 
 	{
 		bool emailSent;
@@ -35,6 +35,6 @@ namespace
 	   void checkAndAlert( std::vector<IAlerter>&);
 	};
 
-}
+//}
 
 
