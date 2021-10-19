@@ -18,7 +18,6 @@ namespace Statistics {
 	};
 	struct LEDAlert 
 	{
-
 		bool ledGlows;
 	};
 	struct IAlerter
