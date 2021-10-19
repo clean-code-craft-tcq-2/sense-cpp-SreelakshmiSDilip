@@ -8,8 +8,8 @@ namespace Statistics {
         double max;
     };
     Stats ComputeStatistics(const std::vector<double>& );
-}
-class StatsAlerter
+	
+	class StatsAlerter
 {
 
    std::vector<IAlerter*> alerters;
@@ -32,4 +32,6 @@ struct LEDAlert
 
 	bool ledGlows;
 };
+
+}
 
