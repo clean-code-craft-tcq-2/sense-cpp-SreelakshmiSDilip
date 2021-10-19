@@ -1,6 +1,6 @@
 #include "stats.h"
-
-Stats Statistics::ComputeStatistics(const std::vector<double>& v1 ) {
+namespace Statistics {
+Stats ComputeStatistics(const std::vector<double>& v1 ) {
     //Implement statistics here
     Stats s;
      s.max = *max_element(v1.begin(), v1.end());
@@ -8,4 +8,5 @@ Stats Statistics::ComputeStatistics(const std::vector<double>& v1 ) {
     s.average = std::accumulate(v1.begin(), v1.end(), 0LL) / v1.size();
     
     return s;
+}
 }
