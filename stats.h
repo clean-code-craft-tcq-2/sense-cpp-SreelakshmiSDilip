@@ -16,7 +16,7 @@ namespace
 	{
 
 	public:
-	  StatsAlerter StatsAlerter(const float,  std::vector<IAlerter>& );
+	   StatsAlerter(const float,  std::vector<IAlerter>& );
 	   void checkAndAlert( std::vector<IAlerter>&);
 	};
 	struct IAlerter
