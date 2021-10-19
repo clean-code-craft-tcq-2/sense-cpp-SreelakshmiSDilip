@@ -23,8 +23,8 @@ namespace Statistics {
 	};
 	struct IAlerter
 	{
-		EmailAlert emailAlert;
-		 LEDAlert ledAlert;
+		EmailAlert emailAlert1;
+		 LEDAlert ledAlert1;
 	};
 	
 	class StatsAlerter
