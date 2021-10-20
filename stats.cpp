@@ -1,5 +1,6 @@
 #include "stats.h"
 #include<algorithm>
+#include<numeric>
 namespace Statistics {
 Stats ComputeStatistics(const std::vector<double>& v1 ) {
     //Implement statistics here
