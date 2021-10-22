@@ -1,14 +1,14 @@
 #include "stats.h"
 #include<algorithm>
 #include<numeric>
-#include<vector>
+
 namespace Statistics {
 Stats ComputeStatistics(const std::vector<double>& v1 ) {
     //Implement statistics here
     Stats s;
      s.max = *(std::max_element(v1.begin(), v1.end()));
     s.min = *(std::min_element(v1.begin(), v1.end()));
-    s.average = (std::reduce(v1.begin(), v1.end())) / v1.size();
+    s.average = (std::accumulate(v1.begin(), v1.end(),0.0L)) / v1.size();
     
     return s;
 }
