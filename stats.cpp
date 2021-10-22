@@ -22,6 +22,8 @@ vector<IAlerter> StatsAlerter::checkAndAlert( const std::vector<double>& v2)
         vecAlert[0]={{true},{true}};
         
     }
+    
+    return vecAlert;
 
 }
 
