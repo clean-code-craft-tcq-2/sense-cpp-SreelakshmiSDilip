@@ -13,7 +13,7 @@ Stats ComputeStatistics(const std::vector<double>& v1 ) {
 }
     
 }
-void checkAndAlert( const std::vector<double>& v2)
+void StatsAlerter::checkAndAlert( const std::vector<double>& v2)
 {
     auto computedStats = Statistics::ComputeStatistics(v2);
     if(computedStats.max > maximumThreshold)
