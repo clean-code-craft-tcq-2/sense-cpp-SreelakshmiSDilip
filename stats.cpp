@@ -19,7 +19,10 @@ void StatsAlerter::checkAndAlert( const std::vector<double>& v2)
     auto computedStats = Statistics::ComputeStatistics(v2);
     if(computedStats.max > maximumThreshold)
     {
-       
+    IAlerter *alertObj = new IAlerter();
+    alertObj->emailAlert1 = {true};
+    alertObj->ledAlert1 = {true};
+    vecAlert.push_back( alertObj );
     }
     
     
