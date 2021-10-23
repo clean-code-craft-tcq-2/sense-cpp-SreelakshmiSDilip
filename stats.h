@@ -12,18 +12,18 @@ namespace Statistics {
 }
 //namespace
 //{
-	struct *EmailAlert 
+	struct EmailAlert 
 	{
-		bool *emailSent;
+		bool emailSent;
 	};
-	struct *LEDAlert 
+	struct LEDAlert 
 	{
-		bool *ledGlows;
+		bool ledGlows;
 	};
 	struct *IAlerter
 	{
-		EmailAlert* emailAlert1;
-		 LEDAlert* ledAlert1;
+		EmailAlert &emailAlert1;
+		 LEDAlert &ledAlert1;
 	};
 	
 	class StatsAlerter
