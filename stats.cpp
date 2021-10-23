@@ -20,11 +20,11 @@ IAlerter StatsAlerter::checkAndAlert( const std::vector<double>& v2)
     //IAlerter localStruct;
     if(computedStats.max > maximumThreshold)
     {
-        //localStruct.emailAlert1.emailSent = true;
-        //localStruct.ledAlert1.ledGlows = true;
+        localStruct.emailAlert1.emailSent = true;
+        localStruct.ledAlert1.ledGlows = true;
 //vecAlert.push_back(localStruct);
-        *vecAlert[0].emailAlert1.emailSent = true;
-        *vecAlert[0].ledAlert1.ledGlows = true;
+        vecAlert[0]->emailAlert1 = true;
+        vecAlert[0]->ledAlert1= true;
     }
     
     return (*vecAlert[0]);
