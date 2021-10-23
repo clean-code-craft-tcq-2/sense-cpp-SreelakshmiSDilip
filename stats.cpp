@@ -17,7 +17,6 @@ Stats ComputeStatistics(const std::vector<double>& v1 ) {
 void StatsAlerter::checkAndAlert( const std::vector<double>& v2)
 {
     auto computedStats = Statistics::ComputeStatistics(v2);
-    IAlerter localStruct;
     if(computedStats.max > maximumThreshold)
     {
        
