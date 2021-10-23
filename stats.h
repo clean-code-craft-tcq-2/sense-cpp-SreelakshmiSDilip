@@ -20,10 +20,10 @@ namespace Statistics {
 	{
 		bool ledGlows;
 	};
-	struct IAlerter
+	struct *IAlerter
 	{
-		EmailAlert emailAlert1;
-		 LEDAlert ledAlert1;
+		EmailAlert* emailAlert1;
+		 LEDAlert* ledAlert1;
 	};
 	
 	class StatsAlerter
