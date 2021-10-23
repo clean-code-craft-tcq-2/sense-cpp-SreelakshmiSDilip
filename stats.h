@@ -12,13 +12,13 @@ namespace Statistics {
 }
 //namespace
 //{
-	struct EmailAlert 
+	struct *EmailAlert 
 	{
-		bool emailSent;
+		bool *emailSent;
 	};
-	struct LEDAlert 
+	struct *LEDAlert 
 	{
-		bool ledGlows;
+		bool *ledGlows;
 	};
 	struct *IAlerter
 	{
@@ -38,7 +38,7 @@ namespace Statistics {
 		   vecAlert = vecAlertArg;
 	   }
 	   //std::vector<IAlerter> checkAndAlert( const std::vector<double>&);
-	    IAlerter checkAndAlert( const std::vector<double>&);
+	    void checkAndAlert( const std::vector<double>&);
 	};
 
 //}
