@@ -14,7 +14,7 @@ Stats ComputeStatistics(const std::vector<double>& v1 ) {
 }
     
 }
-std::pair<EmailAlert, LEDAlert> StatsAlerter::checkAndAlert( const std::vector<double>& v2)
+std::pair<bool, bool> StatsAlerter::checkAndAlert( const std::vector<double>& v2)
 {
     auto computedStats = Statistics::ComputeStatistics(v2);
     IAlerter localStruct;
