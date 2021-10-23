@@ -29,9 +29,9 @@ namespace Statistics {
 	class StatsAlerter
 	{
           float maximumThreshold;
+	   std::vector<IAlerter>vecAlert;
 	  
 	public:
-	   std::vector<IAlerter>vecAlert;
 	   StatsAlerter(const float Threshold,  std::vector<IAlerter> vecAlertArg )
 	   {
 		  maximumThreshold =  Threshold;
