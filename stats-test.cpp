@@ -31,8 +31,8 @@ TEST_CASE("raises alerts when max is greater than threshold") {
     LEDAlert ledAlert = {false};
     std::vector<IAlerter*> alerters;// = {{& emailAlert, & ledAlert}};
     IAlerter *alertObj = new IAlerter();
-    alertObj->emailAlert1 = emailAlert;
-    alertObj->ledAlert1 = ledAlert;
+    alertObj->emailAlert1 = &emailAlert;
+    alertObj->ledAlert1 = &ledAlert;
     alerters.push_back( alertObj );
     
     const float maxThreshold = 10.2;
