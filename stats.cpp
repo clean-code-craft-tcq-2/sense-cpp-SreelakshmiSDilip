@@ -23,8 +23,8 @@ IAlerter StatsAlerter::checkAndAlert( const std::vector<double>& v2)
         localStruct.emailAlert1.emailSent = true;
         localStruct.ledAlert1.ledGlows = true;
 //vecAlert.push_back(localStruct);
-        vecAlert[0]->emailAlert1 = true;
-        vecAlert[0]->ledAlert1= true;
+        vecAlert[0]->emailAlert1 = localStruct.emailAlert1;
+        vecAlert[0]->ledAlert1= localStruct.ledAlert1;
     }
     
     return (*vecAlert[0]);
