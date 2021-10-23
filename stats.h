@@ -37,7 +37,7 @@ namespace Statistics {
 		   vecAlert = vecAlertArg;
 	   }
 	   //std::vector<IAlerter> checkAndAlert( const std::vector<double>&);
-		std::pair<bool, bool> checkAndAlert( const std::vector<double>&);
+	    IAlerter checkAndAlert( const std::vector<double>&);
 	};
 
 //}
