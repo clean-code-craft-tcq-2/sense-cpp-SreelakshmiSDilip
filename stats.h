@@ -36,7 +36,8 @@ namespace Statistics {
 		  maximumThreshold =  Threshold;
 		   vecAlert = vecAlertArg;
 	   }
-	   std::vector<IAlerter> checkAndAlert( const std::vector<double>&);
+	   //std::vector<IAlerter> checkAndAlert( const std::vector<double>&);
+		std::pair<EmailAlert, LEDAlert> checkAndAlert( const std::vector<double>&);
 	};
 
 //}
