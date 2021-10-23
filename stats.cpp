@@ -14,7 +14,7 @@ Stats ComputeStatistics(const std::vector<double>& v1 ) {
 }
     
 }
-std::pair<bool, bool> StatsAlerter::checkAndAlert( const std::vector<double>& v2)
+IAlerter StatsAlerter::checkAndAlert( const std::vector<double>& v2)
 {
     auto computedStats = Statistics::ComputeStatistics(v2);
     IAlerter localStruct;
@@ -25,7 +25,7 @@ std::pair<bool, bool> StatsAlerter::checkAndAlert( const std::vector<double>& v2
         vecAlert.push_back(localStruct);
     }
     
-    return std::make_pair(vecAlert[0].emailAlert1.emailSent, vecAlert[0].ledAlert1.ledGlows);
+    return (vecAlert[0]);
 
 }
 
