@@ -18,7 +18,7 @@ std::vector<IAlerter> StatsAlerter::checkAndAlert( const std::vector<double>& v2
 {
     auto computedStats = Statistics::ComputeStatistics(v2);
     IAlerter localStruct;
-    //if(computedStats.max > maximumThreshold)
+    if(computedStats.max > maximumThreshold)
     {
         localStruct.emailAlert1.emailSent = true;
         localStruct.ledAlert1.ledGlows = true;
