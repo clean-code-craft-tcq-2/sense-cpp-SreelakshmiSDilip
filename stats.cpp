@@ -17,12 +17,14 @@ Stats ComputeStatistics(const std::vector<double>& v1 ) {
 IAlerter StatsAlerter::checkAndAlert( const std::vector<double>& v2)
 {
     auto computedStats = Statistics::ComputeStatistics(v2);
-    IAlerter localStruct;
+    //IAlerter localStruct;
     if(computedStats.max > maximumThreshold)
     {
-        localStruct.emailAlert1.emailSent = true;
-        localStruct.ledAlert1.ledGlows = true;
-        vecAlert.push_back(localStruct);
+        //localStruct.emailAlert1.emailSent = true;
+        //localStruct.ledAlert1.ledGlows = true;
+//vecAlert.push_back(localStruct);
+        vecAlert[0].emailAlert1.emailSent = true;
+        vecAlert[0].ledAlert1.ledGlows = true;
     }
     
     return (vecAlert[0]);
