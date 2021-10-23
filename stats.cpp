@@ -20,7 +20,7 @@ void StatsAlerter::checkAndAlert( const std::vector<double>& v2)
     if(computedStats.max > maximumThreshold)
     {
         *(vecAlert[0]->emailAlertPtr) = {true};
-        *(vecAlert[0]->emailAlertPtr) = {true};
+        *(vecAlert[0]->ledAlertPtr) = {true};
     }
 
 }
