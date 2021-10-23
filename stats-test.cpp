@@ -24,8 +24,8 @@ TEST_CASE("raises alerts when max is greater than threshold") {
     statsAlerter.checkAndAlert({99.8, 34.2, 4.5, 6.7});
 
      
-    REQUIRE(alerters[0].emailAlert.emailSent);
-    REQUIRE(alerters[0].ledAlert.ledGlows);
+    REQUIRE(alerters[0].emailAlert1.emailSent);
+    REQUIRE(alerters[0].ledAlert1.ledGlows);
 }
 
 TEST_CASE("average is NaN for empty array") {
