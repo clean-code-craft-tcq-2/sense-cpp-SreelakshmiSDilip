@@ -32,7 +32,7 @@ namespace Statistics {
 	  std::vector<IAlerter*>vecAlert;
 	  
 	public:
-	   StatsAlerter(const float Threshold,  std::vector<IAlerter*> vecAlertArg )
+	   StatsAlerter(const float Threshold,  std::vector<IAlerter> vecAlertArg )
 	   {
 		  maximumThreshold =  Threshold;
 		   vecAlert = vecAlertArg;
